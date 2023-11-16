@@ -1,4 +1,6 @@
 import ReactDOM from "react-dom";
-import { App } from "./App";
+import { AppEP4 } from "./AppEP4";
+import { AppEP5 } from "./AppEP5";
+import { AppEP6 } from "./AppEP6";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<AppEP6 />, document.getElementById("root"));
