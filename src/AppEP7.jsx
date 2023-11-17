@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AdminFlagContext } from './components/Providers/AdminFlagProvider';
 import { Card } from "./components/Card";
 
 export const AppEP7 = () => {
-    const [isAdmin, setIsAdmin] = useState(false);
+    const { isAdmin, setIsAdmin} = useContext(AdminFlagContext);
 
     const onClickSwitch = () => setIsAdmin(!isAdmin);
 
